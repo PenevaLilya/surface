@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Proxima Nova Lt";
+  src: url("../fonts/subset-ProximaNova-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova sb";
+  src: url("../fonts/subset-ProximaNova-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/subset-ProximaNova-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("../fonts/subset-ProximaNova-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  background: url("../img/football.png") no-repeat #0a0e34;
+  background-size: cover;
+}
+.header__inner {
+  padding-top: 55px;
+  padding-bottom: 110px;
+}
+.header__logo {
+  display: flex;
+}
+.header__logo__text {
+  margin-left: auto;
+  color: #ffffff;
+  font-family: "Proxima Nova Lt";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 35px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+.header__title {
+  margin-top: 305px;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  font-family: "Proxima Nova";
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 100px;
+  text-transform: uppercase;
+  letter-spacing: 4.96px;
+  position: relative;
+}
+.header__title h1 {
+  position: relative;
+  z-index: 2;
+}
+.header__title h2 {
+  align-self: flex-end;
+}
+.header__title::before {
+  content: "";
+  width: 5px;
+  height: 400px;
+  background-color: #5e42b0;
+  position: absolute;
+  left: 535px;
+  transform: rotate(35deg);
+  top: -130px;
+  z-index: 1;
+}
+.header__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 180px;
+}
+
+.container {
+  max-width: 1555px;
+  margin: 0 auto;
+}
+
+.nav {
+  margin-top: 15px;
+}
+.nav__items {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav__item {
+  color: #9071ea;
+  font-family: "Proxima Nova Lt";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 35px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-left: 45px;
+}
+
+.button {
+  background-color: #5e42b0;
+  background-image: url("../img/Icon-Apple.png");
+  background-repeat: no-repeat;
+  padding: 20px 67px 20px 100px;
+  width: 311px;
+  background-position: 40px;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0 16px 24px #0a0e34;
+}
+.button:focus {
+  outline: none;
+}
+.button__text {
+  color: #ffffff;
+  font-family: "Proxima Nova Lt";
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  max-width: 150px;
+}
+.button__text_bold {
+  font-family: "Proxima Nova Rg";
+  font-weight: 400;
+}
+.button_icon {
+  background-image: url("../img/Icon-Google_Play.png");
+  margin-left: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
