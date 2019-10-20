@@ -65,14 +65,6 @@ body{
         margin-top: 305px;
         display: flex;
         flex-direction: column;
-        color: #ffffff;
-        font-family: "Proxima Nova";
-        font-size: 90px;
-        font-weight: 700;
-        line-height: 100px;
-        text-transform: uppercase;
-        letter-spacing: 4.96px;
-        position: relative;
         h1{
             position: relative;
             z-index: 2;
@@ -98,7 +90,16 @@ body{
         justify-content: center;
         margin-top: 180px;
     }
-
+}
+.title{
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 100px;
+    text-transform: uppercase;
+    letter-spacing: 4.96px;
+    position: relative;
 }
 .nav{
     margin-top: 15px;
@@ -244,8 +245,8 @@ body{
         }
     }
     .button{
-        padding: 10px 0;
-        background-size: 13%;
+        padding: 10px 0px 10px 20px;
+        background-size: 12%;
         background-position: 15px;
         &__text{
             font-size: 8px;
@@ -444,5 +445,183 @@ body{
     }
     .block__image{
         min-height:350px;
+    }
+}
+/*footer*/
+.footer{
+    background-color: #09173f;
+    background-image: url('../img/photo-1417716226287-2f8cd2e80274.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer__inner-big{
+    padding-top:230px ;
+    padding-bottom: 197px;
+}
+.footer__headline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline{
+    position: relative;
+    .title{
+        z-index: 3;
+    }
+    &::before{
+        content: '';
+        width:8px;
+        display: block;
+        height: 220px;
+        background-color: $brand-color;
+        position: absolute;
+        transform: rotate(40deg);
+        top: -50px;
+        left: 90px;
+        z-index: 0;
+        opacity: 0.8;
+    }
+    &::after{
+        content: '';
+        width:8px;
+        display: block;
+        height: 420px;
+        background-color: $brand-color;
+        position: absolute;
+        transform: rotate(40deg);
+        top: -160px;
+        right: 256px;
+        z-index: 1;
+        opacity: 0.8;
+    }
+}
+.subtitle{
+    color: #a496ca;
+    font-family: "Proxima Nova";
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.icon{
+    background-image: url('../img/Artwork.png');
+    background-position:center;
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 137px;
+    margin-right: 36px;
+}
+.footer__buttons{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer__inner-small{
+  background-color: transparentize($bgc, 0.4);
+    padding: 70px 0;
+}
+.wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.social{
+    &__link{
+        margin-right: 35px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+.contact{
+    color: #ffffff;
+    font-family: "Proxima Nova Rg";
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+@media (max-width:1120px){
+    .footer__inner-big{
+        padding-top:128px ;
+        padding-bottom: 197px;
+    }
+    .footer__headline{
+        flex-direction: column;
+        .icon{
+            margin-right: 0;
+            margin-bottom:70px;
+        }
+    }
+    .headline{
+        .title{
+            font-size: 80px;
+            letter-spacing: 4.85px;
+        }
+        &::after{
+            height: 400px;
+            top: -120px;
+        }
+    }
+    .footer__buttons{
+        margin-top: 175px;
+    }
+    .footer__inner-small{
+        padding: 35px 0;
+    }
+    .wrap{
+        justify-content: center;
+    }
+    .logo,
+    .contacts{
+        display: none;
+    }
+}
+@media(max-width:767px){
+    .footer__inner-big{
+        padding-top:97px ;
+        padding-bottom: 127px;
+    }
+    .icon{
+        width: 73px;
+        height: 78px;
+        background-size: cover;
+    }
+    .headline{
+        .title{
+            font-size: 34px;
+            letter-spacing: 1.7px;
+            line-height: 68px;
+        }
+        &::before{
+            width: 5px;
+            height: 90px;
+            left: 30px;
+            top: -2px;
+        }
+        &::after{
+            width: 5px;
+            height: 400px;
+            top: -25px;
+            height: 135px;
+            right: 110px;
+        }
+        .subtitle{
+            font-size: 15px;
+            letter-spacing: 0.75px;
+            line-height: 15px;
+        }
+    }
+    .footer__buttons{
+        margin-top: 72px;
+    }
+    .footer__inner-small{
+        padding: 20px 0 15px;
+    }
+    .social__link{
+        width: 20px;
+        height: 20px;
+        &-img{
+            height: 17px;
+        }
     }
 }
