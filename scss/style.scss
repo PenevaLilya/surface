@@ -210,7 +210,7 @@ body {
         align-self: flex-start;
       }
       h2 {
-        width: 85%px;
+        width: 85%;
       }
       &::before {
         width: 3px;
@@ -489,6 +489,9 @@ body {
   }
 }
 @media (max-width: 767px) {
+  body{
+    min-width: 320px;
+  }
   .football {
     .title,
     .card {

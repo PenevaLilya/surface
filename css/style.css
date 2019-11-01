@@ -220,7 +220,7 @@ body {
     align-self: flex-start;
   }
   .header__title h2 {
-    width: 85% px;
+    width: 85%;
   }
   .header__title::before {
     width: 3px;
@@ -500,6 +500,10 @@ body {
   }
 }
 @media (max-width: 767px) {
+  body {
+    min-width: 320px;
+  }
+
   .football .title,
 .football .card {
     padding-left: 0;
